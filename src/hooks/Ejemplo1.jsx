@@ -19,9 +19,9 @@ const Ejemplo1 = () => {
     }
 
     /**
-     * Queremos que el VALORINICIAL y PERSONAINICIAL sean parte
-     * del estado del componente para así poder gestionar su cambio
-     * y que este se vea reflejado en la vista del componente
+     * Queremos que VALORINICIAL y PERSONAINICIAL sean parte del
+     * estado del componente para así poder gestionar su cambio y
+     * que este se vea reflejado en la vista del componente
      * 
      * const [nombreVariable, funcionParaCambiar] = useState(valorInicial)
      */
