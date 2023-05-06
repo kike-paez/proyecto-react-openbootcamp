@@ -6,7 +6,6 @@ import TaskForm from '../pure/forms/taskForm';
 
 // Importamos la hoja de estilos de task.css
 import '../../styles/task.scss'
-import Taskfrom from '../pure/forms/taskForm'
 
 const TaskListComponent = () => {
 
@@ -42,6 +41,14 @@ const TaskListComponent = () => {
         const index = tasks.indexOf(task)
         const tempTask = [...tasks]
         tempTask.splice(index, 1)
+        setTasks(tempTask)
+    }
+
+    function addTask(task) {
+        console.log('Add this Task:', task)
+        const index = tasks.indexOf(task)
+        const tempTask = [...tasks]
+        tempTask.push(task)
         setTasks(tempTask)
     }
 
@@ -84,7 +91,7 @@ const TaskListComponent = () => {
                     </div>
                 </div>
             </div>
-            {/* <TaskForm></TaskForm> */}
+            <TaskForm add={addTask}></TaskForm>
         </div>
     );
 };
