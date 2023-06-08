@@ -41,7 +41,7 @@ function App() {
         <OptionalRender></OptionalRender>
 
         {/* PROYECTO FINAL */}
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
     </div>
   );
 }
